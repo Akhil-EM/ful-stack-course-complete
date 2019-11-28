@@ -1,0 +1,18 @@
+
+<div class="divstyle">
+    <h1>Students</h1>
+    <!-- <ul>
+     <li  *ngFor="let i of userdata">{{i.name}}</li>
+    </ul> -->
+    <div class="scroll">
+        <div *ngFor="let i of userdata" class="divcont">
+             <ul>
+              <li>{{i.name}}</li>
+              <li>{{i.email}}</li> 
+             <li>{{i.address.zipcode}}</li> 
+            </ul>     
+      </div>
+    </div>
+    
+    
+</div>

@@ -1,0 +1,25 @@
+<h1>
+  Welcome to webapp {{ title }}!<br>
+  name is {{data.name}}<br>
+  age is {{data.age}}
+</h1>
+  <h1>months <ul>
+    <li  *ngFor="let i of months">{{i}}</li>
+   </ul></h1>
+    <select>
+      <option *ngFor="let i of months">{{i}}</option>
+    </select>
+    <p *ngIf="isavilable"> new text data in new array</p>
+          <p *ngIf="a<b">{{b}} is largest</p>
+          <span *ngIf="a<b; else condition1">{{a}} less than {{b}}</span>
+          <ng-template #condition1>{{a}} greater than {{b}}</ng-template><br>
+          <br>
+          <br>
+          <!-- working on name part -->
+          <input type="text" [(ngModel)]=name placeholder="type name"/>
+          <h1>your name is {{name}}</h1>
+          <br>
+          <br>
+            <!-- event binding -->
+          <button (click)="myClickFunction($event)">show alert</button>
+

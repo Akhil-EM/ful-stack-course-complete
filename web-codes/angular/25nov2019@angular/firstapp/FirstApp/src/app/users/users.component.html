@@ -1,0 +1,19 @@
+
+<div class="divstyle">
+        <h1>Users</h1>
+        <button (click)="getUsers()">click me</button>
+        <!-- <ul>
+         <li  *ngFor="let i of userdata">{{i.name}}</li>
+        </ul> -->
+        <div class="scroll">
+            <div *ngFor="let i of userdata" class="divcont">
+                 <ul>
+                  <li>{{i.name}}</li>
+                  <li>{{i.email}}</li> 
+                 <li>{{i.address.zipcode}}</li> 
+                </ul>     
+          </div>
+        </div>
+        
+        
+</div>

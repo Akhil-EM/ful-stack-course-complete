@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>validation</title>
+    <script>
+        function validate(form)
+        {
+            var emailreg=/\S+@\S+\.\S+/;
+          var name=form.username.value.length;
+          var pnoLen=form.phno.value.length;
+          var email=form.email.value;
+          
+        //   alert(name);
+        //   if(name<4)
+        //   {
+        //       alert("user name must >4");
+        //       return false;
+        //   }
+        //   else if(emailreg.test(email)==false)
+        //   {
+        //       alert("not a valid email");
+        //       return false;
+        //   }
+        //   else if(pnoLen!=10)
+        //   {
+        //     alert("not a valid phone no");
+        //       return false;
+        //   }
+          
+        }
+    </script>
+</head>
+<body>
+      <h1>Sign Up</h1>
+      <p>Please fill this form to create an account !</p>
+      <hr>
+      <form action="#" methode="post" onsubmit="return validate(this)"> 
+     <input type="text" name="username" id="username" placeholder="enter username"  required><br>
+     <br>
+     <input type="text" name="email" id="email" placeholder="enter email" required>
+     <br>
+     <br>
+     <input type="number" name="phno" id="phno" placeholder="enter mob no" required  >
+     <br>
+     <br>
+      <Button type="submit">Sign up</Button>
+      </form>
+</body>
+</html>

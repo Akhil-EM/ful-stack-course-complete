@@ -1,0 +1,33 @@
+.divstyle{
+    background-color:rgba(0, 0, 0, 0.856);
+    width:100vw;
+    height:10vh;    
+    margin-top:0px;
+    padding:0px;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    font-size:3em;
+}
+.menu
+{
+    color: rgb(251, 251, 251);
+    text-decoration:none;
+    margin-right:20px;
+    font-weight:bold;
+    font-size:2em;
+    margin-bottom:5px;
+}
+li{
+    list-style-type:none;
+    float: left;
+    padding-top:40px;
+    margin-bottom:5px;
+    }
+ul{
+    margin:0px;
+}

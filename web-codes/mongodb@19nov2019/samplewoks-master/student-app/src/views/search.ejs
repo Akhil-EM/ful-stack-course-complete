@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student register</title>
+</head>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/mystyle.css">
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<body>
+    <div class="bodydiv">
+        <nav class="navbarcustom navbar navbar-expand-sm  navbar-dark navbarcustom">
+            <div class=" li-text">
+                <ul class="nav navbar-nav li-text">
+                    <% for(var i=0;i<nav.length;i++){%>
+                        <li>
+                            <a href="<%=nav[i].link%>" class="li-text">
+                                <%=nav[i].tittle%>
+                            </a>
+                        </li>
+                    <%}%>
+                </ul>
+            </div>
+        </nav>
+        <div class="datadiv">
+            <form action="/action_page.php">
+                <label for="sel1">Select item to search:</label>
+                <select class="form-control" id="sel1" name="sellist1">
+                    <option>name</option>
+                    <option>admno</option>
+                    <option>college</option>            
+                </select>
+                <br>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block buttonwidth" name="login" id="login">search</button>
+            </form>
+        </div>
+
+        </div>
+</body>
+
+</html>

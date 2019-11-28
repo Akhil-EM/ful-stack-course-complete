@@ -1,0 +1,22 @@
+<div class="container contin-custom">
+  <div class="card">
+    <div class="card-header">
+      <h1>Angular 6 Template-DrivenForm-validation</h1>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control" formControlName="firstName" [ngClass]="{'is-invalid':submitted && f.firstName.errors}"
+          />
+          <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstName.errors.required">First Name is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn-custom">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

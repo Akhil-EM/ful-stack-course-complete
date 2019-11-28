@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+   <div id="mydiv" style="width:400px;height:600px;background-color: rgba(0, 0, 0, 0.075);padding:2%;">
+    </div><br>
+   <button onclick="load_ajax()">click me to show ajax text</button>
+   <button onclick="clear_ajax()">clear</button>
+   <div class="loader"></div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.every()</h2>
+
+<p>The every() method checks if all array values pass a test.</p>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [45, 42, 91, 161, 25];
+var allOver18 = numbers.every(myFunction);
+console.log(allOver18);
+document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction(value, index, array) {
+    console.log(index);
+    console.log(value);
+    console.log(array);
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
