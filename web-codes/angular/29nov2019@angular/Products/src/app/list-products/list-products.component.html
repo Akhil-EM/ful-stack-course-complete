@@ -1,0 +1,50 @@
+<div class="container">
+
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>
+          <input type="button" class="btn btn-success" (click)="change_value()" value="{{btn_name}}">
+          </th>
+          <th>Product</th>
+          <th>Code</th>
+          <th>Release Date</th>
+          <th>Discription</th>
+          <th>Price</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+
+      <tbody *ngIf='products_arry && products_arry.length'>
+      
+          <tr *ngFor="let i of products_arry">
+            <td>
+              <img *ngIf="flag" src="{{i.imageUrl}}"  class="image-des">   
+            </td>
+            <td>
+               {{i.productName}}
+            </td>
+            <td>
+                {{i.productCode}}
+            </td>
+            <td>
+                {{i.releaseDate}}
+            </td>
+            <td>
+              {{i.description}}
+            </td>
+            <td>
+                {{i.price}}
+            </td>
+            <td>
+                {{i.starRating}}
+            </td>
+          </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</div>
